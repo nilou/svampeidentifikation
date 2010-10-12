@@ -1,0 +1,54 @@
+\documentclass[a4paper,11pt]{report}
+% -*- coding: utf8 -*-
+
+\usepackage{amssymb,amsmath,euler,eucal}
+
+\usepackage[cm-default]{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+
+\usepackage[perpage]{footmisc}
+\usepackage{multicol}
+\usepackage[xetex,
+  colorlinks=true,
+  hyperindex=true,
+  linktocpage=true,
+  urlcolor=blue,
+  pdfauthor={Johs Kristoffersen, Michael Falcke Nilou og Jon Lund Steffensen},
+  pdftitle={Digital identifikation af svampe}]{hyperref}
+
+\pagestyle{headings}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont{Cambria}
+\setsansfont[Scale=MatchLowercase]{Calibri}
+\setmonofont[Scale=MatchLowercase]{Consolas}
+
+\setdefaultlanguage{danish}
+\setotherlanguage{english}
+
+\bibliographystyle{plain}
+
+\title{Digital~identifikation af~svampe}
+\author{\scshape Johs~Kristoffersen \and Michael~Falcke~Nilou \and
+  Jon~Lund~Steffensen}
+\date{2010}
+
+%\usepackage[left=3cm,right=3cm]{geometry}
+
+\begin{document}
+  \maketitle
+  \tableofcontents
+
+  \renewcommand{\chaptername}{}
+
+  \include{01_baggrund}
+  \include{02_problemformulering}
+  %\include{03_designovervejelser}
+  %\include{04_evaluering}
+  %\include{05_konklusion}
+
+  \addcontentsline{toc}{chapter}{Litteratur}
+  \bibliography{rapport}
+\end{document}
